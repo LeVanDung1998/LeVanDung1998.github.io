@@ -114,7 +114,7 @@ body{
 }
 
 .header_right_bottom{
-	margin-right: 122px;
+	margin-right: 119px;
 
 }
 
@@ -140,9 +140,8 @@ body{
 }
 
 .header_right_bottom ul li a:hover{
+	border-bottom: #71bf44 solid 3.5px;
 
-	
-	background-color: #71bf44;
 }
 
 .slider-container{
