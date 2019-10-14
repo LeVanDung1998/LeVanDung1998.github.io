@@ -1,0 +1,933 @@
+@font-face {
+	font-family:vietnamBold;
+	src:url('fonts/oxy-vietnam-Bold.ttf') format('truetype');
+	font-weight:normal;
+	 font-style:normal;
+}
+@font-face {
+	font-family:vietnamItalic;
+	src:url('fonts/oxy-vietnam-Italic.ttf') format('truetype');
+	font-weight:normal;
+	 font-style:normal;
+}
+
+@font-face {
+	font-family:vietnam;
+	src:url('fonts/oxy-vietnam.ttf') format('truetype');
+	font-weight:normal;
+	 font-style:normal;
+}
+
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+#header{
+	background: #ffffff;
+	height: 110px;
+}
+
+#header_left{
+	margin-top:5px;
+	float: left;
+	margin-left: 145px;
+}
+
+#header_right{
+	float: right;
+}
+
+.box_qc{
+	float: right;
+	padding-top: 8px;
+	margin-right: 20px;
+    margin-left: 5px;
+    font-family: vietnam;
+}
+
+.box_qc .yt_logo{
+	padding: 8px;
+		background-color: red;
+}
+
+.box_qc .fb_logo{
+	padding: 8px 14px;
+	background-color: #224095;
+}
+
+.hotline{
+	color: #ffffff;
+	background-color: #71bf44;
+	padding: 0px 0px;
+}
+
+.box_qc > span {
+
+	padding: 8px 8px 8px 8px;
+}
+
+.box_qc > span > a > img{
+	margin:-2px;
+}
+.box_search{
+	margin-left: 336px;
+	height: 100%;
+    width: 100%;
+    
+}
+
+.box_search input{
+	border: 1px solid #415ba4;
+	background: #fff;
+	height: 33px;
+    width: 200px;
+    font-family: vietnamItalic;
+	/*border: none;
+	padding-left: 10px;*/
+
+}
+
+.fa-search{
+	padding: 5.5px;
+}
+
+.btnSearch{
+	cursor: pointer;
+	background: #fff;
+    /* border: none; */
+    height: 37px;
+    width: 35px;
+    top: 7px;
+    border: 1px solid #415ba4;
+    padding: 6.5px;
+    margin-left: -4px;
+    color: #415ba4;
+}
+
+
+
+.header_right_top{
+	margin-top:15px;
+	margin-right: 121px;
+}
+
+.header_right_bottom{
+	margin-right: 122px;
+
+}
+
+.header_right_bottom ul li{
+	display: inline-block;
+	padding: 5px 0px;
+	margin-right: 21px;
+}
+
+.header_right_bottom ul li a{
+	color: #212121;
+	display: block;
+	padding: 0px 10px;
+	border-right: 2px solid #d8d8d8;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: vietnamBold;
+	font-weight: bold;
+	line-height: 11px;
+
+
+}
+
+.header_right_bottom ul li a:hover{
+
+	
+	background-color: #71bf44;
+}
+
+.slider-container{
+  height: 663px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
+}
+
+.slider_container_popup{
+	position: absolute;
+    z-index: 901;
+    width: 249px;
+    height: 110px;
+    float: right;
+    margin: 265px 0px 0px 1100px;
+}
+
+.slider_container_popup_left{
+	float: left;
+    width: 18px;
+    height: 110px;
+    background-color:#224095;
+}
+
+.slider_container_popup_left img{
+	    margin-top: 51px;
+}
+
+.slider-container_popup_right{
+	width: 231px;
+    height: 110px;
+    float: right;
+    background-color: #71bf44;
+}
+
+.slider_container_popup_right_top a{
+	color: white;
+	font-family: vietnam;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 16px 10px 0px 18px;
+    /* display: block; */
+    display: inline-flex;
+    margin: 0px 27px 0px -15px;
+}
+
+
+
+.slider_container_popup_right_top{
+	height: 55px;
+	border-bottom: #224095 solid 1.5px;
+}
+
+.slider-container_popup_right_bottom{
+	height: 55px;
+}
+
+.slider-container_popup_right_bottom a{
+	color: white;
+	font-family: vietnam;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 16px 26px 0px 18px;
+    /* display: block; */
+    display: inline-flex;
+    margin: 0px 71px 0px -15px;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+section{
+	width: 100%;
+	height: 695px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .2em 1em;
+  transition: all .3s ease;
+  &:hover {
+    background: red;
+  }
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("image/banner21.png");
+}
+.slide-2 {
+  background-image: url("image/banner1.png");
+}
+.slide-3 {
+  background-image: url("https://source.unsplash.com/OlZ1nWLEEgM/1600x900");
+}
+
+.iconPhone{
+	position: absolute;
+    width: 47px;
+    z-index: 901;
+    border-radius: 50%;
+    background-color: #71bf44;
+    margin: 531px 0px 0px 90px;
+}
+
+.iconPhone img{
+	    padding: 15px;
+}
+.banner_gt{
+	position: relative;
+	height: 750px;
+	border-bottom: #71bf44 solid 5px;
+
+}
+
+.banner_gt_rectang{
+	position: absolute;
+}
+
+.banner_gt_left{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	border-top: #224095 solid 10px;
+	float: left;
+}
+
+.banner_gt_left_content{
+	margin-left: 92px;
+    margin-top: 46px;
+    position: relative;
+}
+
+.banner_gt_left_content_shape{
+ 	position: absolute;
+ 	margin: 66px 0px 0px 0px;
+}
+
+.banner_gt_left_content > h1,h4{
+	text-transform: uppercase;
+	color: #224095;
+	font-family: vietnamBold;
+}
+
+.banner_gt_left_content h1{
+	font-size: 43px;
+}
+
+.banner_gt_left_content .banner_gt_left_content_text,h4{
+	margin-left: 17px;
+}
+
+.banner_gt_left_content_text{
+	text-align: justify;
+	font-family: vietnam;
+	 width: 90%;
+	 color: #000000;
+
+}
+
+.banner_gt_left_content_logo{
+	    margin-left: -32px;
+	height: 292px;
+}
+
+
+
+.banner_gt_left_content_logo .coppy{
+	position: relative;
+	background-image: url(image/coppy.png);
+	width: 85px;
+	height: 124px;
+	margin: 40px 28px;
+	float: left;
+}
+
+.banner_gt_left_content_logo .coppy img{
+	margin: 32px 0px 0px 17px;
+}
+
+.banner_gt_left_content_logo span{
+
+    position: absolute;
+    width: 68px;
+    margin: 173px 0px 0px -107px;
+    font-size: 14px;
+    text-align: center;
+    font-family: vietnam;
+    font-weight:bold;
+}
+
+.logo_xemThem > a img{
+	    margin: 49px 0px 0px 29px;
+}
+
+.banner_gt_right{
+
+	width: 50%;
+	height: 98.5%;
+	float: right;
+	background-image: url('image/ben_6215.png');
+	border-top: #71bf44 solid 10px;
+}
+
+.banner_sp{
+	width: 100%;
+	height: 715px;
+	 
+}
+
+.banner_sp_top{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	background-color: #284393;
+}
+
+.banner_sp_top_sp{
+	position: absolute;
+	width: 550px;
+	margin:49px 0px 0px 473px;
+}
+
+.banner_sp_top_sp img{
+
+	margin:0px 0px 0px 107px;
+}
+
+.banner_sp_bottom{
+	width: 100%;
+	height: 50%;
+	background-color: #f2f2f2;
+}
+
+.banner_sp_top_sp_gc1{
+	margin:  13px 4px -37px -140px;
+	
+}
+
+.banner_sp_top_sp_gc2{
+	float: right;
+	margin:-35px 60px 0px 0px;
+}
+
+.banner_sp_top_imgSp{
+	padding-top: 165px;
+    margin-left: 116px;
+}
+
+.banner_sp_top_imgSp div{
+	margin:-8px 66px 0px 0px;
+	}
+
+.banner_sp_top_imgSp .img{
+	border-bottom: #71bf44 solid 2px;
+
+}
+
+.banner_sp_top_imgSp1{
+	float: left;
+	position: relative;
+}
+
+.banner_sp_top_imgSp1 a{
+	    margin: 399px 0px 0px -237px;
+    position: absolute;
+}
+
+.banner_sp_top_imgSp2{
+	float: left;
+	position: relative;
+}
+
+
+.banner_sp_top_imgSp2 a{
+	 margin: 399px 0px 0px -237px;
+	 position: absolute;
+}
+
+.banner_sp_top_imgSp3{
+	float: right;
+	position: relative;
+}
+
+.banner_sp_top_imgSp3 a{
+	 margin: 399px 0px 0px -237px;
+	 position: absolute;
+}
+
+.img_Sp{
+	position: absolute;
+    margin: 65px 0px 0px -277px;
+}
+
+.name_sp{
+	position: absolute;
+	margin: 481px 0px 0px -228px;
+	text-transform: uppercase;
+	color: #284393;
+	font-size: 23px;
+	font-family: vietnamBold;
+    font-weight:bold;
+}
+
+.banner_prj{
+	width: 100%;
+	height: 818px;
+	
+
+}
+
+.banner_prj_top{
+	width: 100%;
+	height: 141px;
+	
+}
+
+.banner_prj_bottom{
+	width: 100%;
+	height: 677px;
+	
+}
+
+.slider-holder
+{
+    width: 100%;
+    height: 677px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.button-holder{
+	margin-left: 1200px;
+}
+
+.button-holder a{
+	margin:0px -5px -11px 10px;
+}
+
+.image-holder
+{
+    width: 160%;
+    
+    height: 677px;
+    clear: both;
+    position: relative;
+    margin:0px 0px 0px 0px;
+   
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.slider-image
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slider-image-1:target ~ .image-holder
+{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder
+{
+    left: -800px;
+}
+
+#slider-image-3:target ~ .image-holder
+{
+    left: -1600px;
+}
+
+#slider-image-4:target ~ .image-holder
+{
+    left: -2400px;
+}
+
+#slider-image-5:target ~ .image-holder
+{
+    left: -3200px;
+}
+
+.button-holder
+{
+    position: relative;
+    top: -20px;
+}
+
+.slider-change
+{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    border: #224095 solid 1px;
+}
+
+.image-holder >a img{
+	
+	display: block;
+	    width: 444px;
+    height: 300px;
+
+	margin: -3px 3px 9px 2px;
+}
+
+.image-holder a:nth-of-type(3n+4){
+	clear: both;
+	float: left;
+
+}
+
+.image-holder a> span{
+	
+}
+
+
+/*đối tác*/
+.banner_dt{
+	width: 100%;
+	height: 407px;
+	margin-top: -45px;
+	position: relative;
+
+}
+
+.banner_sp_top_sp span{
+	margin:0px 0px 0px 107px;
+	font-family: vietnamBold;
+    font-weight:bold;
+    text-transform: uppercase;
+    color: #224095;
+    font-size: 48px;
+}
+
+.banner_dt_bottom{
+	width: 100%;
+	height: 266px;
+
+}
+
+.banner_dt_bottom_slider-holder
+{
+    width: 100%;
+    height: 248px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner_dt_bottom_button-holder{
+	margin-left: 1200px;
+	    margin-left: 1092px;
+}
+
+.banner_dt_bottom_button-holder a{
+	margin:0px -5px -4px 12px;
+}
+
+.banner_dt_bottom_image-holder
+{
+    
+    height: 200px;
+    clear: both;
+    position: relative;
+    margin:17px 0px 0px 153px;
+   
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+
+.banner_dt_bottom_image-holder a{
+	width: 207px;
+    height: 156px;
+    position: relative;
+    float: left;
+   
+    border: #e4e4e4 solid 1px;
+     border-bottom: #3853a0 solid 2.5px;
+     margin-left:3px;
+}
+
+
+
+.banner_dt_bottom_slider-image
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#banner_dt_bottom_slider-image-1:target ~ .banner_dt_bottom_image-holder
+{
+    left: 0px;
+}
+
+#banner_dt_bottom_slider-image-2:target ~ .banner_dt_bottom_image-holder
+{
+    left: -800px;
+}
+
+#banner_dt_bottom_slider-image-3:target ~ .banner_dt_bottom_image-holder
+{
+    left: -1600px;
+}
+
+#banner_dt_bottom_slider-image-4:target ~ .banner_dt_bottom_image-holder
+{
+    left: -2400px;
+}
+
+#banner_dt_bottom_slider-image-5:target ~ .banner_dt_bottom_image-holder
+{
+    left: -3200px;
+}
+
+
+/*.banner_dt_bottom_button-holder
+{
+    position: relative;
+    top: -20px;
+
+}
+*/
+.banner_dt_bottom_slider-change
+{
+	
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    border: #224095 solid 1px;
+
+}
+
+
+
+.banner_dt_bottom_image-holder >a img{
+	position: absolute;
+	display: block;
+	width: 124px;
+    height: 107px;
+    margin: 34px 0px 0px 46px;
+	
+}
+
+
+#footer{
+	height: 463px;
+	background-color: #224095;
+	position: relative;
+}
+
+.footer_left {
+	width: 327px;
+	height: 437px;
+	float: left;
+	margin-left: 157px;
+	
+	color: white;
+	
+}
+
+.footer_center{
+	width: 341px;
+	height: 437px;
+	float: left;
+	color: white;
+	    margin-left: 35px;
+}
+
+.footer_right{
+	float: right;
+	width: 440px;
+	height: 437px;
+	
+}
+
+.footer_logo{
+	width: 157px;
+	margin-top: 33px;
+	
+}
+
+.footer_inform{
+	
+	     margin-top: 12px;
+}
+
+.footer_inform span{
+	height: 40px;
+	font-family: vietnam;
+}
+
+.footer_text{
+	font-family: vietnamBold;
+	    font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 37px 0px -22px 0px;
+}
+
+.footer_center_top_top{
+	font-family: vietnamBold;
+	    font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	    margin-bottom: -22px;
+}
+
+.footer_center_top{
+	margin-top: 33px;
+	border-bottom: #657ab5 solid 2px;
+}
+
+.footer_center_top_bottom{
+	margin-top:  28px;
+    margin-bottom: 8px;
+}
+
+.footer_center_top_bottom span{
+	font-family: vietnam;
+}
+
+.footer_right_support{
+	height: 60px;
+}
+
+.box_support{
+	width: 288px;
+	height: 80px;
+	margin-top: 36px;
+    margin-left: 13px;
+    border-bottom: #657ab5 solid 1px;
+}
+
+.box_support_img{
+	margin: 1px 0px -10px 0px;
+    display: block;
+    float: left;
+    padding: 11px;
+	border: #657ab5 solid 1px;
+}
+
+.box_support span{
+	padding: 9px;
+	color: white;
+	display: block;
+	margin:1px 0px;
+	float: left;
+	font-family: vietnam;
+	border: #657ab5 solid 1px;
+}
+
+.zl_logo img{
+	float: left;
+    margin-left: 11px;
+    margin-right: 11px;
+    width: 37px;
+    padding: 4px;
+    height: 40px;
+    margin-top: -2px;
+}
+
+.sky_logo img{
+	width: 41px;
+    padding: 4px;
+    height: 44px;
+    margin-top: -4px;
+    /* margin-right: 0px; */
+    margin-left: -9px;
+}
+
+.footer_right_regis{
+	width: 285px;
+    margin-top: 60px;
+    margin-left: 13px;
+    border-bottom: #657ab5 solid 1px;
+}
+
+.footer_right_regis_top {
+	font-family: vietnamBold;
+	    font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	    margin-bottom: -22px;
+	    width: 263px;
+	    color: white;
+}
+
+.footer_right_regis_form {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    
+    padding: 20px;
+}
+.footer_right_regis_form    input[type=text] {
+    width: 100%;
+    padding: 12px 0px 11px 1px;
+    border: 1px solid #ccc;
+    background-color: #224095;
+    font-family: vietnam;
+    margin-left: -20px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+ 
+.footer_right_regis_form input[type=submit] {
+    background-color: #4CAF50;
+    position: relative;
+    padding: 12px 43px;
+    border: none;
+    margin-left: -20px;
+    cursor: pointer;
+}
+ 
+.footer_right_regis_form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.button_regis{
+	position: absolute;
+	margin: 10px 0px 0px -55px;
+}
+
+.footer_right_coppy{
+	color: white;
+	font-family: vietnam;
+	height: 60px;
+	margin: 19px 0px 0px 13px;
+}    
+
+.footer_scroll{
+	width: 12px;
+    height: 15px;
+    position: absolute;
+    padding: 13px;
+    margin: 393px 0px 0px 1268px;
+    border: #f1f3f8 solid 1px;
+}
+
