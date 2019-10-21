@@ -19,9 +19,10 @@
 }
 
 
-body{
+html,body{
 	padding: 0px;
 	margin: 0px;
+	justify-content: center;
 	overflow-x: hidden;
 }
 
@@ -33,71 +34,86 @@ body{
 #header{
 	background: #ffffff;
 	display:flex;
-	height: 120px;
+	height: 115px;
 	position: fixed;
     z-index: 902;
 	align-items: center;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 0px 0px 0px 80px;
+	
 }
 
 #header_left{
-	position: absolute;
-	left: 9%;
-	top: 15%;
+	width: 20%;
+	height: 100%;
+	/* position: absolute; */
+	/* left: 9%; */
+	/* top: 15%; */
+	/* height: 100%; */
 }
 
 #header_right{
-	position: absolute;
-	right: 16%;
-	top: 15%;
+	/* position: absolute; */
+	width: 80%;
+	/* right: 10%; */
+	height: 100%;
+	/* transform: translateY(15px); */
+	/* top: 15%; */
 }
 .logo{
-	    padding: 10px 20px 0px 0px;
+	    height: 100%;
+	    /* padding: 10px 20px 0px 0px; */
 }
 .logo > a img{
 	display: block;
-    width: 100%;
-    height: auto;
+	margin-top: 15px;
+	height: auto;
+	margin-left: auto;
 }
 
 .box_qc{
+	position: absolute;
     font-family: vietnam;
+    right: 15%;
+    padding: 7px 0;
 }
 
 .box_qc .yt_logo{
-	padding: 6px 7px 7px 7px;
-		background-color: red;
+	padding: 7px 7px 6px 7px;
+	background-color: red;
 }
 
 .box_qc .fb_logo{
-	padding: 6px 14px 7px 13px;
+	padding: 7px 14px 6px 13px;
 	background-color: #224095;
 }
 
 .hotline{
+	/* line-height: 33px; */
 	color: #ffffff;
 	background-color: #71bf44;
-	padding: 6px 4px 8px 3px;
+	padding: 7px 4px 7px 3px;
 	font-family: vietnamBold;
+	/* padding-bottom: 50%; */
+	/* transform: translate(10px, 10px); */
 }
 
 .box_qc > span {
-	margin: 0 1px;
+	/* position: absolute; */
+	/* margin: 0 auto; */
 }
 
 .box_search{
 	cursor: pointer;
-    background: #fff;
-    height: 32px;
-    margin-right: 9px;
-    border: 1px solid #415ba4;
-    color: #415ba4;
-    position: absolute;
-    top: 2%;
-    right: 28%;
+	background: #fff;
+	height: 32px;
+	/* margin-right: 9px; */
+	border: 1px solid #415ba4;
+	color: #415ba4;
+	position: absolute;
+	/* top: 2%; */
+	right: 36.5%;
 }
 
 .box_search form{
@@ -127,24 +143,30 @@ body{
 
 
 .header_right_top{
-	padding-top: 1%;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
+	width: 100%;
+	height: 50%;
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	transform: translateY(10px);
+}
+
+.header_right_bottom{
+	transform: translateX(68px);
 }
 
 .header_right_bottom ul{
-	margin: 0;
-    list-style-type: none;
-    display: inline-block;
-    padding: 38px 0px;
-
+	/* margin: 0; */
+	list-style-type: none;
+	display: inline-block;
+	/* padding: 38px 0px; */
+	/* margin-left: auto; */
 }
 
 .header_right_bottom ul li{
 	list-style: none;
-    float: left;
-    position: relative;
+	float: left;
+	position: relative;
 }
 
 .header_right_bottom ul li a{
@@ -171,7 +193,7 @@ body{
   color:#000;
   margin: 0;
   padding: 0;
-  margin-top: 110px;
+  margin-top: 115px;
 }
 
 .banner_slide{
@@ -201,6 +223,8 @@ body{
   -webkit-align-items: center;
   align-items: center;
   background: center;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
 }
 
 .iconPhone{
@@ -295,8 +319,8 @@ body{
 
 .banner_gt{
 	display: flex;
-	height: 750px;
-	border-bottom: #71bf44 solid 5px;
+    height: 750px;
+    border-bottom: #71bf44 solid 10px;
 }
 
 .banner_gt_rectang{
@@ -341,8 +365,8 @@ body{
 }
 
 .banner_gt_left_content_logo{
-	width: 100%;
-	display:;
+	width: auto;
+	
 	display: flex;
 	margin-top: 42px;
 }
@@ -351,10 +375,10 @@ body{
 	background-image: url(image/coppy.png);
 	background-repeat: no-repeat;
 	width: 100%;
-	height: calc(100vh-);
+	height: calc(100%/4);
 	height: auto;
 	align-items: center;
-	margin-right: 60px;
+	
 	display: grid;
 }
 
@@ -364,7 +388,7 @@ body{
 }
 
 .banner_gt_left_content_logo span{
-	text-align: center;
+	text-align: left;
 	margin-top: 53px;
 	font-family: vietnam;
 	font-weight:bold;
@@ -376,10 +400,12 @@ body{
 
 .banner_gt_right{
 	width: 50%;
-	height: 100%;
+	
 	right: 0;
 	background-image: url('image/ben_6215.png');
-	border-top: #71bf44 solid 5px;
+	border-top: #71bf44 solid 10px;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 }
 
 
@@ -413,12 +439,12 @@ body{
 
 
 .banner_sp_top_sp{
-	width: 100%;
+	width: 500px;
 	padding-top: 15px;
 	height: auto;
 	align-items: center;
 	display: flex;
-	margin-left: 33%;
+	margin:0 auto;
 }
 
 .banner_sp_top_sp span{
@@ -438,7 +464,7 @@ body{
 
 .banner_sp_top_imgSp{
 	display: flex;
-    width: calc(100% - 350px);
+    width: calc(100% - 300px);
     margin: 56px auto;
 }
 
@@ -447,7 +473,7 @@ body{
 	background-color: white;
 	display: block;
 	width: 100%;
-	margin: 0px 5px;
+	margin: 0px 10px;
 	display: grid;
 	padding: 50px;
 	border-bottom: #71bf44 solid 2px;
@@ -455,20 +481,22 @@ body{
 
 .banner_sp_top_imgSp1 a{
 	position: absolute;
-	bottom: -24px;
-	left: 27%;
+	bottom: -6%;
+	transform: translate(64%, 0);
+	/* left: 29%; */
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	/* justify-content: center; */
 }
 
 
 .img_Sp{
-	width: 223px;
-    height: 306px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
-.img_sp img{
-	width: 100%;
-	height: 100%;
-}
+
 .name_sp{
 	width: 100%;
 	text-align: center;
@@ -479,6 +507,7 @@ body{
 	font-family: vietnamBold;
 	font-weight:bold;
 	position: absolute;
+	/* transform: translateY(123%); */
 }
 /*banner dự án*/
 .banner_prj{
@@ -486,18 +515,14 @@ body{
 	height: 818px;
 }
 
-.banner_prj_top{
-	width: 100%;
-	height: 141px;
-}
 
 .banner_prj_top{
-	width: 100%;
+	width: 500px;
 	padding: 18px 0;
 	height: auto;
 	align-items: center;
 	display: flex;
-	margin-left: 35%;
+	margin: 0 auto;
 }
 
 .banner_prj_top span{
@@ -531,7 +556,7 @@ body{
 	text-align: center;
 	font-size: 18px;
 	background: #fff;
-	height: calc((100% - 30px) / 2);
+	height: calc((100% - 15px) / 2);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -566,7 +591,7 @@ body{
 	height: auto;
 	align-items: center;
 	display: flex;
-	margin-left: 34%;
+	transform: translateX(35%);
 }
 
 .banner_dt_top span{
@@ -844,4 +869,3 @@ body{
   right: 0;
   z-index: 901;
 }
-

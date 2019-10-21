@@ -1,6 +1,6 @@
 // banner slide
 var swiper_banner_slide = new Swiper('.banner_slide_swiper-container', {
-      spaceBetween: 30,
+      spaceBetween: 5,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -10,7 +10,7 @@ var swiper_banner_slide = new Swiper('.banner_slide_swiper-container', {
  var swiper_banner_prj = new Swiper('.banner_prj_bottom', {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 30,
+      spaceBetween: 5,
       pagination: {
         el: '.banner_prj_bottom_swiper-pagination',
         clickable: true,
@@ -23,7 +23,7 @@ var swiper_banner_slide = new Swiper('.banner_slide_swiper-container', {
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       centeredSlides: true,
-      spaceBetween: 30,
+      spaceBetween: 5,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
