@@ -12,6 +12,27 @@ var swiper_banner_prj = new Swiper(".banner_prj_bottom", {
   slidesPerColumn: 2,
   spaceBetween: 5
 });
+
+//section project:
+    // var h_project = new Swiper('#js_h-project', {
+    //   speed: 1500,
+    //   slidesPerColumnFill: 'row',
+    //   slidesPerView: 3,
+    //   allowTouchMove: false,
+    //   slidesPerColumn: 2,
+    //   spaceBetween: 5,
+    //   pagination: {
+    //     el: '.h-project .swiper-pagination',
+    //     clickable: true
+    //   },
+    //   breakpoints: {
+    //     480: {
+    //       slidesPerView: 1,
+    //       allowTouchMove: true,
+    //       slidesPerColumn: 1,
+    //     }
+    //   }
+    // });
  
 //slide đối tác
 var appendNumber = 4;
@@ -24,7 +45,7 @@ var swiper = new Swiper(".swiper-container", {
   speed: 1000,
   slidesPerView: 5,
   centeredSlides: true,
-  spaceBetween: 5,
+  spaceBetween: 3,
   pagination: {
     el: ".swiper-pagination",
     clickable: true
