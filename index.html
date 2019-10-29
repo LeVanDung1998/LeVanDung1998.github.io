@@ -25,34 +25,34 @@
 			    }); 
 			});
 
-			// $(document).ready(function(){
-			// 	$("banner_prj_bottom swiper-slide div").hover(function(){
-			// 		$(this).toggleClass("prj_nameShow");
-			// 	});
-			// });
+			 //   $(document).ready(function(){
+				//   $(".btn_cancel").click(function(){
+				//     $(".open").toggle();
+				//   });
+				// });
 	</script>
 </head>
 <body>
 <!-- 	header -->
 	<div id="header" class="">
-		<div id="header_left">
+		<div class ="header_left">
 			<div class="logo">
 				<a href="#"><img src="image/VH_logo.png"></a>
 			</div>
 		</div>
-		<div id="header_right">
+		<div class ="header_right toggleHeader" >
 			<div class="header_right_top">
 
 				<div class="box_search ">
-					<form>
+					<form method="post" action="#">
 						<input type="text" name="search" placeholder="Tìm kiếm sản phẩm/Giải pháp">
 						<button type="submit" class="btnSearch"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
 				<div class="box_qc">
 						<span class="hotline"><a href="#"> Hotline: 123456789</a></span>
-						<span class="yt_logo"><a href="#"><img src="image/yt_logo.png"></a></span>
-						<span class="fb_logo"><a href="#"><img src="image/fb_logo.png"></a></span>
+						<span class="yt_logo"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></span>
+						<span class="fb_logo"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></span>
 				</div>
 			</div>
 			<div class="header_right_bottom">
@@ -66,6 +66,18 @@
 					<li><a href="#">Liên hệ</a></li>
 				</ul>
 			</div>
+
+			<a href="#" class="menu_close close_menu">Đóng Menu</a>
+		</div>
+
+
+		<div class="hamburger-box">
+			<div class="hamburger-menu">
+				Menu
+			</div>
+			<div class="hamburger-inner">
+				
+			</div>
 		</div>
 	</div>
 
@@ -75,9 +87,12 @@
 	<div class="wrapper">
 <!-- banner slide -->
 		<div class="banner_slide">
-		   <div class="iconPhone">
-		  	<a href="#"><img src="image/iconPhone.png"></a>
-		   </div>
+		   <a href="#" class="iconPhone">
+		   	<div class="scale">
+		   		
+		   	</div>
+		  	<img src="image/iconPhone.png"></a>
+		   </a>
 
 		    <div class="banner_slide_swiper-container">
 		    	<div class="swiper-wrapper">
@@ -153,17 +168,19 @@
 								Thành lập năm 2006
 							</div>
 						</div>
+
+						<div style="clear: both;">
+							
+						</div>
 					</div>
 					<div class="logo_xemThem">
 							<a href="#"><img src="image/xemThem.png"></a>
 					</div>
 				</div>
-				
 
 			</div>
 
 			<div class="banner_gt_right">
-				
 			</div>
 			<div class="banner_left_decor">
 					<img src="image/decor_left_gt.png" alt="">
@@ -182,25 +199,19 @@
 				</div>
 			    <div class="banner_sp_top_imgSp">
 					<div class="banner_sp_top_imgSp1">
-						<!-- <span class="img_Sp"> -->
 							<img src="image/ks988.png">
-						<!-- </span> -->
 						<a href="#"><img src="image/xemThemSp.png"></a>
 						<span class="name_sp">keshun</span>
 					</div>
 
 					<div class="banner_sp_top_imgSp1">
-							<!-- <span class="img_Sp"> -->
 							<img src="image/lm1001.png">
-							<!-- </span> -->
 						<a href="#"><img src="image/xemThemSp.png"></a>
 						<span class="name_sp">Loewenmal</span>
 					</div>
 
 					<div class="banner_sp_top_imgSp1">
-							<!-- <span class="img_Sp"> -->
 							<img src="image/lm1002.png">
-							<!-- </span> -->
 						<a href="#"><img src="image/xemThemSp.png"></a>
 						<span class="name_sp">Vandex</span>
 					</div>
@@ -215,14 +226,14 @@
 					Dự án
 			</div>
 
-			<div class="banner_prj_bottom">
-				<div class="swiper-wrapper">
-    			  <div class="swiper-slide" style="background-image: url(image/dhTonThang.png)">
-    			  	<div class="prj_name">Đại học tôn thắng</div>
-    			  </div>
-     			  <div class="swiper-slide" style="background-image: url(image/chungCu.png)">
-     			  	<div class="prj_name">Chung cư sky center</div>
-     			  </div>
+			 <div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide" style="background-image: url(image/dhTonThang.png)">
+			      	<div class="prj_name">Đại học tôn thắng</div>
+			      </div>
+			      <div class="swiper-slide" style="background-image: url(image/chungCu.png)">
+			      	<div class="prj_name">Chung cư sky center</div>
+			      </div>
 			      <div class="swiper-slide" style="background-image: url(image/duAnQuangT.png)">
 			      	<div class="prj_name">Quảng trường mặt trời</div>
 			      </div>
@@ -235,20 +246,21 @@
 			      <div class="swiper-slide" style="background-image: url(image/duAnValencia.png)">
 			      	<div class="prj_name">Valencia riverside</div>
 			      </div>
-			      <!-- <div class="swiper-slide" style="background-image: url(image/europe.png)">
-			      	<div class="prj_name">Europe shophouse</div>
+			      <div class="swiper-slide" style="background-image: url(image/chungCu.png)">
+			      	<div class="prj_name">Chung cư sky center</div>
 			      </div>
-			      <div class="swiper-slide" style="background-image: url(image/duAnQuangT.png)">
-			      	<div class="prj_name">Quảng trường mặt trời</div>
+			      <div class="swiper-slide" style="background-image: url(image/europe.png)">
+			      	<div class="prj_name">Europe shophouse</div>
 			      </div>
 			      <div class="swiper-slide" style="background-image: url(image/duAnQuangT.png)">
 			      	<div class="prj_name">Quảng trường mặt trời</div>
 			      </div>
 			      <div class="swiper-slide" style="background-image: url(image/dhTonThang.png)">
 			      	<div class="prj_name">Đại học tôn thắng</div>
-			      </div> -->
-    			</div>
-    			<div class="banner_prj_bottom_swiper-pagination"></div>
+			      </div>
+				</div>
+			    <!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 
@@ -260,16 +272,30 @@
 
 			<div class="swiper-container">
 			    <div class="swiper-wrapper">
-			      <div class="swiper-slide" style="background-image: url(image/hdmon.png);"></div>
-			      <div class="swiper-slide" style="background-image: url(image/hoaBinh.png);"></div>
-			      <div class="swiper-slide" style="background-image: url(image/recco.png);"></div>
-			      <div class="swiper-slide" style="background-image: url(image/inno.png);"></div>
-			      <div class="swiper-slide" style="background-image: url(image/delta.png);"></div>
+			      <div class="swiper-slide">
+			      	<img src="image/hdmon.png">
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="image/hoaBinh.png" alt="">
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="image/recco.png" alt="">
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="image/inno.png" alt="">
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="image/delta.png" alt="">
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="image/hoaBinh.png" alt="">
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="image/inno.png" alt="">
+			      </div>
 			    </div>
-			   
 			    <div class="swiper-pagination"></div>
 			    <div class="decor_left">
-				
 			</div>
 			</div>
 			<div class="swiper-button-next"></div>
@@ -287,7 +313,7 @@
 				
 			</div>
 		</div>
-	</div>
+	<!-- </div> -->
 <!-- end banner giới thiệu -->
 <!-- end wapper -->
 <!-- footer -->
@@ -303,19 +329,24 @@
 			<div class="footer_gc">
 			</div>
 			<div class="footer_inform">
-				<span><img src="image/iconAdress.png">  Lô BT2-Ô số 49, Bắc Linh Đàm, Phường Hoàng Liệt, Quận Hoàng Mai, TP.Hà Nội
+				<span>
+					<img src="image/iconAdress.png">Lô BT2-Ô số 49, Bắc Linh Đàm, Phường Hoàng Liệt, Quận Hoàng Mai, TP.Hà Nội
 				</span>
 				
-				<span><img src="image/iconPhone.png">  0123456789
+				<span>
+					<img src="image/iconPhone.png">0123456789
 				</span>
 				
-				<span><img src="image/iconPhone.png">  0123456789/0123456789
+				<span>
+					<img src="image/iconPhone.png">0123456789/0123456789
 				</span>
 				
-				<span><img src="image/iconPhoneBan.png">  0123456789
+				<span>
+					<img src="image/iconPhoneBan.png">0123456789
 				</span>
 				
-				<span><img src="image/iconMail.png">  abc@gmail.com
+				<span>
+					<img src="image/iconMail.png">abc@gmail.com
 				</span>
 			</div> 
 		</div>
@@ -328,13 +359,16 @@
 				<div class="footer_gc">
 				</div>
 				<div class="footer_center_top_bottom">
-					<span><img src="image/iconAdress.png">  Phòng 304, Tòa nhà DC, số 111D đường Lý Chính Thắng, Phường 7, Quận 3, TP.Hồ Chí Minh
+					<span>
+						<img src="image/iconAdress.png">Phòng 304, Tòa nhà DC, số 111D đường Lý Chính Thắng, Phường 7, Quận 3, TP.Hồ Chí Minh
 					</span>
 					
-					<span><img src="image/iconPhone.png">  0123456789
+					<span>
+						<img src="image/iconPhone.png">0123456789
 					</span>
 					
-					<span><img src="image/iconPhoneBan.png">  0123456789
+					<span>
+						<img src="image/iconPhoneBan.png">0123456789
 					</span>
 				</div>
 			</div>
@@ -346,13 +380,16 @@
 				<div class="footer_gc">
 				</div>
 				<div class="footer_center_top_bottom">
-					<span><img src="image/iconAdress.png">  Phòng 303, Tòa nhà Nguyễn Hữu Thọ, P.Hòa Cường Bắc, Q.Hải Châu, TP.Đà Nẵng
+					<span>
+						<img src="image/iconAdress.png">Phòng 303, Tòa nhà Nguyễn Hữu Thọ, P.Hòa Cường Bắc, Q.Hải Châu, TP.Đà Nẵng
 					</span>
 					
-					<span><img src="image/iconPhone.png">  0123456789
+					<span>
+						<img src="image/iconPhone.png">0123456789
 					</span>
 					
-					<span><img src="image/iconPhoneBan.png">  0123456789
+					<span>
+						<img src="image/iconPhoneBan.png">0123456789
 					</span>
 				</div>
 			</div>
@@ -390,7 +427,7 @@
 			</div> 
 		</div>
 
-			<a href="#" id="scroll" style="display: none;"><span></span></a>
+			<a href="#" id="scroll"><span></span></a>
 
 			<div class="decor_footer">
 				<img src="image/decor_ft.png">
@@ -401,5 +438,14 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 	<script src="js/js.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script>
+		// popup menu:
+			    $('.hamburger-box').click(function(){
+			      $('.toggleHeader').stop().addClass('active');
+			    });
+			    $('.close_menu').click(function(){
+			      $('.toggleHeader').stop().removeClass('active');
+			    });
+	</script>
 </body>
 </html>
