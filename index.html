@@ -181,13 +181,14 @@
 			</div>
 
 			<div class="banner_gt_right">
+				<img src="image/ben_6215.png" alt="">
 			</div>
 			<div class="banner_left_decor">
 					<img src="image/decor_left_gt.png" alt="">
 			</div>
 
 			<div class="banner_right_decor">
-				<img src="image/decor_right_gt.png" alt="">
+				 <img src="image/decor_right_gt.png" alt=""> 
 			</div>
 		</div>
 <!-- end banner giới thiệu -->
@@ -427,7 +428,9 @@
 			</div> 
 		</div>
 
-			<a href="#" id="scroll"><span></span></a>
+			<!-- <a href="#" id="scroll"><span></span></a> -->
+
+			<div class="scrollTop"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
 			<div class="decor_footer">
 				<img src="image/decor_ft.png">
@@ -446,6 +449,24 @@
 			    $('.close_menu').click(function(){
 			      $('.toggleHeader').stop().removeClass('active');
 			    });
+
+		// js scrollTop
+		$(".scrollTop").click(function () {
+			$('html,body').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+		$(window).scroll(function () {
+			var y = $(window).scrollTop();
+			if (y != 0) {
+				$(".scrollTop").show(300);
+				$('#header').addClass('header_scroll');
+			} else {
+				$(".scrollTop").hide(300);
+				$('#header').removeClass('header_scroll');
+			}
+		});
 	</script>
 </body>
 </html>

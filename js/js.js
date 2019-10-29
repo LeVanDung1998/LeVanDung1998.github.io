@@ -46,57 +46,7 @@ var swiper = new Swiper(".banner_dt .swiper-container", {
     prevEl: ".banner_dt .swiper-button-prev"
   }
 });
-// document
-//   .querySelector(".prepend-2-slides")
-//   .addEventListener("click", function(e) {
-//     e.preventDefault();
-//     swiper.prependSlide([
-//       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-//       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-//     ]);
-//   });
-// document.querySelector(".prepend-slide").addEventListener("click", function(e) {
-//   e.preventDefault();
-//   swiper.prependSlide(
-//     '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-//   );
-// });
-// document.querySelector(".append-slide").addEventListener("click", function(e) {
-//   e.preventDefault();
-//   swiper.appendSlide(
-//     '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-//   );
-// });
-// document
-//   .querySelector(".append-2-slides")
-//   .addEventListener("click", function(e) {
-//     e.preventDefault();
-//     swiper.appendSlide([
-//       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-//       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-//     ]);
-//   });
- 
-//nút scroll
-var mybutton = document.getElementById("myBtn");
- 
-window.onscroll = function() {
-  scrollFunction();
-};
- 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
- 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
- 
+
 //popup
 function toggleForm() {
   var element = document.getElementById("myForm");
