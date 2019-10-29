@@ -19,28 +19,6 @@
   font-style: normal;
 }
 
-/*@font-face {
-  font-family: "vietnamBold";
-  src: url("") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "vietnamItalic";
-  src: url("fonts/oxy-vietnam-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "vietnam";
-  src: url("fonts/oxy-vietnam.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-*/
-
-
 html,
 body {
   padding: 0px;
@@ -65,9 +43,6 @@ p {
   flex-direction: row;
   align-items: space-around;
   padding-right: 10% !important;
- /* box-shadow: 0px 0px 17px 0px rgba(50, 50, 50, 1);
-  -moz-box-shadow: 0px 0px 17px 0px rgba(50, 50, 50, 1);
-  -webkit-box-shadow: 0px 0px 17px 0px rgba(50, 50, 50, 1);*/
 }
 
 .header_scroll{
@@ -1663,6 +1638,10 @@ h3 {
   -webkit-align-items: center;
   align-items: center;
   height: 140px !important;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  border-bottom: solid 3px #284393;
 }
 
 .banner_dt .swiper-container .swiper-wrapper .swiper-slide img{
@@ -1682,13 +1661,6 @@ h3 {
 
 .swiper-pagination-bullet{
   border:#284393 solid 1px;
-}
-
-.banner_dt .swiper-container .swiper-wrapper .swiper-slide {
-  
-  box-shadow: -1px 1px 1px 1px rgba(50, 50, 50, 0.38);
-  border-bottom: solid 4px #284393;
-  border: #f5f5f5 solid 1px;
 }
 
 .banner_dt .swiper-pagination-bullet{
@@ -1742,12 +1714,6 @@ h3 {
     }
 }
 
-@media screen and (max-width: 375px){
-    .banner_dt .swiper-button-prev{
-      margin-top:-25px;
-      left: 0;
-    }
-}
 
 .banner_dt .swiper-button-prev i{
   position: relative;
@@ -1785,12 +1751,6 @@ h3 {
     }
 }
 
-@media screen and (max-width: 375px){
-    .banner_dt .swiper-button-next{
-      margin-top:-25px;
-      right: 0;
-    }
-}
 
 .banner_dt .swiper-button-next:hover{
   background-color: #284393;
@@ -2257,25 +2217,6 @@ h3 {
   border-radius: 3px;
 }
 
-#scroll span {
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin-left:-8px;
-  margin-top:-12px;
-  height:0;
-  width:0;
-  border:8px solid transparent;
-  border-bottom-color:#ffffff;
-}
-
-#scroll:hover {
-  background-color:#224095;
-  opacity:1;filter:"alpha(opacity=100)";
-  -ms-filter:"alpha(opacity=100)";
-  display: none;
-}
-
 .open{
    transform: translate(0,-50%);
    transition:1s;
@@ -2297,11 +2238,7 @@ h3 {
   -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
   display: none;
- 
- 
-  
 }
-
 
 .scrollTop i{
   color: #ffffff;
