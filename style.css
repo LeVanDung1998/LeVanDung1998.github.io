@@ -1558,12 +1558,6 @@ h3 {
   z-index: 1;
 }
 
-@media screen and (max-width: 768px){
-    .banner_dt_top{
-    }
-}
-
-
 @media screen and (max-width: 375px){
     .banner_dt_top{
       padding: 11px 30px 0 30px;
