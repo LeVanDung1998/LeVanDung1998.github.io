@@ -1487,11 +1487,11 @@ h3 {
   height: 25%;
   text-align: bottom;
   transform: translateY(-100%);
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .banner_prj .swiper-slide:hover .prj_name:before{
-  transition: 0.5s;
+  transition: 1s;
   bottom: 20px;
 }
 
@@ -1750,7 +1750,6 @@ h3 {
       right: 10px;
     }
 }
-
 
 .banner_dt .swiper-button-next:hover{
   background-color: #284393;
@@ -2171,7 +2170,7 @@ h3 {
   cursor: pointer;
   position: fixed;
   right: 215px;
-  height: 112px;
+  height: 111px;
   width: 16px;
   z-index: 901;
   outline: none;
@@ -2189,6 +2188,12 @@ h3 {
   position: fixed;
   right: 0;
   z-index: 901;
+  transition: 2s;
+}
+
+.form-popup:hover{
+  transform: translate(0%,-50%);
+  transition: 2s;
 }
 
 @media screen and (max-width: 375px){
@@ -2217,12 +2222,12 @@ h3 {
   border-radius: 3px;
 }
 
-.open{
+/*.open{
    transform: translate(0,-50%);
    transition:1s;
 }
 
-
+*/
 .scrollTop{
   position: fixed;
   bottom: 30px;
